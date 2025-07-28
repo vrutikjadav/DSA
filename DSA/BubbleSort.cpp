@@ -20,7 +20,7 @@ int main() {
         cout << arr[i] << ", ";
     }
 
-    for(int i = 0; i < n - 1; i++)
+    for(int i = 0; i < n - i; i++)
     {
         for(int j=1;j<n;j++)
         {
@@ -30,11 +30,14 @@ int main() {
             }
         }
     }
-
+    
+    cout << ", " <<endl;
     cout << "Sorted array: ";
+    
     for(int i=0;i<n;i++)
     {
         cout << arr[i] << ", ";
     }
+    cout << ", " << endl;
     return 0;
 }
